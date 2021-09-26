@@ -6,6 +6,15 @@ module.exports = config => {
   config.addPassthroughCopy('./src/images/')
 
   // --- COLLECTION ---
+  // - Blog
+  // Returns a collection of blog posts in reverse date order
+  config.addCollection('blog', collection => {
+    return [
+      ...collection.getFilteredByGlob('./src/posts/*.md')
+    ].reverse();
+  });
+
+  // - Work
   // Returns work items, sorted by display order
   // These should really just be YAML,
   // or even better, CSV!

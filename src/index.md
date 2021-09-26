@@ -1,5 +1,5 @@
 ---
-title:    Title 42
+title:   A sample site
 layout: 'layouts/home.html'
 # 
 intro:
