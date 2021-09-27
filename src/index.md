@@ -1,6 +1,8 @@
 ---
-title:   A sample site
+title:   Home
 layout: 'layouts/home.html'
+metaDesc: 'A made up agency site that you build if you take Learn Eleventy From Scratch, by Piccalilli'
+# socialImage:
 # 
 intro:
   eyebrow: 'Digital Marketing is our'
