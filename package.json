@@ -1,7 +1,6 @@
 {
   "name": "from-scratch",
   "version": "1.0.0",
-  "description": "",
   "main": ".eleventy.js",
   "scripts": {
     "dev": "npx eleventy --serve",
@@ -26,5 +25,14 @@
     "gulp-sass": "^4.1.0",
     "moment": "^2.29.1",
     "sass": "^1.42.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMorgan99/bookish-rainbow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TMorgan99/bookish-rainbow/issues"
+  },
+  "homepage": "https://github.com/TMorgan99/bookish-rainbow#readme",
+  "description": ""
 }
