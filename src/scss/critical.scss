@@ -76,9 +76,9 @@
 @import 'blocks/site-foot';
 @import 'blocks/site-head';
 @import 'blocks/nav';
-
 @import 'blocks/button';
 @import 'blocks/skip-link';
+@import 'blocks/cta';
 
 
 // Import utilities
@@ -90,3 +90,5 @@
 @import 'utilities/site-wrap';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';
+
+@import 'utilities/headline';
