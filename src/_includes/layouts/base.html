@@ -1,21 +1,24 @@
 {% set assetHash = helpers.assetHash() %}
 
-
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include "partials/meta-info.html" %}
     {# rss #}
-    <link
-    rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
     {# inline styles #}
-    <style>{% include "css/critical.css" %}</style>
+    <style>
+
+    </style>
     {% if pageCriticalStyles %}
       {% for item in pageCriticalStyles %}
-        <style>{% include item %}</style>
+        <style>
+          {% include item %}
+        </style>
       {% endfor %}
     {% endif %}
     {# fonts non-critical styles (this.media='all' trick) #}
@@ -26,9 +29,23 @@
       {% endfor %}
     {% endif %}
   </head>
+
   <body>
-    {% include "partials/site-head.html" %}
-    <main tabindex="-1" id="main-content"> {% block content %}{% endblock %}
+    <div class="site-wrap">
+      {% include "partials/site-head.html" %}
+
+      <main tabindex="-1" id="main-content">
+        {% block content %}{% endblock %}
       </main>
-    </body>
-  </html>
+
+      <footer role="contentinfo" class="site-foot">
+        <div class="wrapper">
+          <p>This is a made up agency for the course,
+            <a href="https://piccalil.li/course/learn-eleventy-from-scratch/">“Learn Eleventy From Scratch”</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+
+</html>
