@@ -3,10 +3,12 @@
     <h1 class="[ page-header__heading ] [ headline ]" data-highlight="primary">
       {{ pageHeaderTitle }}
     </h1>
+
     {% if pageHeaderSummary %}
-    <div class="[ page-header__summary ] [ measure-long ]">
-      {{ pageHeaderSummary | safe }}
-    </div>
+      <div class="[ page-header__summary ] [ measure-long ]">
+        {{ pageHeaderSummary | safe }}
+      </div>
     {% endif %}
+
   </div>
 </div>
