@@ -12,8 +12,9 @@
     <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml"/>
     {# inline styles #}
     <style>
-
+      {% include "css/critical.css" %}
     </style>
+
     {% if pageCriticalStyles %}
       {% for item in pageCriticalStyles %}
         <style>

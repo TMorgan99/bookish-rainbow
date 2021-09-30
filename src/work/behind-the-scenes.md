@@ -3,7 +3,7 @@ title: 'Behind the scenes'
 summary: 'A travel journal that transports you to some of the most
 beautiful places on earth.'
 displayOrder: 2
-featured: false
+featured: true
 hero:
   image: '/images/work/behind-the-scenes-hero.jpg'
   imageAlt: 'A composition of all the views from the app'
