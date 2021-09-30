@@ -1,19 +1,18 @@
 {
-  "name": "from-scratch",
-  "version": "1.0.0",
+  "name": "leventy-from-scratch",
+  "version": "0.0.10",
+  "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "dev": "npx eleventy --serve",
+    "serve": "npx serve dist",
     "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tim Morgan <tmorgan99@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
-  },
   "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "concurrently": "^6.2.1",
@@ -34,6 +33,5 @@
   "bugs": {
     "url": "https://github.com/TMorgan99/bookish-rainbow/issues"
   },
-  "homepage": "https://github.com/TMorgan99/bookish-rainbow#readme",
-  "description": ""
+  "homepage": "https://github.com/TMorgan99/bookish-rainbow#readme"
 }
